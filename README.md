@@ -1,1 +1,3 @@
 # MNIST_NN
+
+The implementation is still in process...
