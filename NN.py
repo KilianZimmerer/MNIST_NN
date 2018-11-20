@@ -80,7 +80,7 @@ class NeuralNetwork(object):
 
 
     def training(self):
-        """"""
+        """Iterating the backward propagation over all test samples"""
 
     def prediciton(self):
         """"""
