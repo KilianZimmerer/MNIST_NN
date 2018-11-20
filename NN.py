@@ -70,10 +70,17 @@ class NeuralNetwork(object):
     def backward_propagation(self, sample):
         """ determines the gradient of one sample through backpropagation"""
         predicted_output_activation, actual_output_activation = nn.forward_propagation(sample)
-        difference = predicted_output_activation - actual_output_activation
 
+        # calculation of the difference between predicted and actual output
+        differences = predicted_output_activation - actual_output_activation
+        # calculating the cost
+        cost = np.sum(differences**2)
+
+        # adding the predicted activation to the activation array
         self.activations.append(predicted_output_activation)
-        #TODO: in this step the gradient values must be estimated
+
+        #TODO: in the next step the gradient values must be estimated. Probably as a jacobian matrix and 1D-array for each layer.
+        # The following gradient is going to store 3 matrices and 3 1D-arrays, each matrix containing the derivation of weights and the !D-arrays containing the derivation of biases
         gradient = []
         for index, val in enumerate(self.activations[::-1]):
             print(val)
