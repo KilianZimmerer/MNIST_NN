@@ -11,7 +11,7 @@ The network is designed for classification tasks, such as recognizing handwritte
 
 ## Quick Start 🚀
 
-Follow these steps to set up the environment and run the model training.
+Follow these steps to set up the environment and run script:
 
 ### 1. Setup Environment
 
