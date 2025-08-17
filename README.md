@@ -29,7 +29,7 @@ source .venv/bin/activate
 python NN.py
 ```
 
-## How to Use
+## How to Use 🛠️
 
 1.  **Initialize the Network**:
     ```python
